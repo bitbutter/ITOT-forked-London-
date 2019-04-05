@@ -4,10 +4,10 @@ into the {body} of the default.hbs template --}}
 
 {{#is "home"}}
     <header class="page-head">
-    {{#if @site.logo}}
-    <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
+    {{#if @blog.logo}}
+    <img class="site-logo" src="{{img_url @blog.logo size="l"}}" alt="{{@blog.title}}" />
     {{else}}
-    {{@site.title}}
+    {{@blog.title}}
     {{/if}}
     {{!-- <h2 class="page-head-title">{{@blog.title}}</h2> --}}
     </header>
